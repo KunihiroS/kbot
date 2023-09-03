@@ -20,7 +20,7 @@ with st.form(key='chat_form'):
         # OpenAI APIを使用して応答を取得
         try:
             response = openai.ChatCompletion.create(
-                model="gpt-4",
+                model="ft:gpt-3.5-turbo-0613:kunihiros::7ujUOqWS",
                 messages=[
                     {"role": "system", "content": "The assistant is trained to emulate the tone and style of a woman who has a deep, yet platonic relationship with a man she met during her study abroad."},
                     {"role": "user", "content": "それまで何をするつもり？"},
